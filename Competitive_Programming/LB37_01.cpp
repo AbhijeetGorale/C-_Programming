@@ -1,0 +1,27 @@
+//write a generic program to multiply two numbers 
+
+#include<iostream>
+using namespace std ;
+
+template<class T>
+
+T Multiply( T no1, T no2)
+{
+    T Ans ;
+
+    Ans = no1 * no2 ;
+
+    return Ans ;
+}
+
+int main()
+{
+
+    int iRet = Multiply(10,20);
+    cout<<"Multiplication is :"<<iRet<<"\n";
+
+    float fRet = Multiply(10.0f,20.f);
+    cout<<"Multiplication is :"<<fRet<<"\n";
+
+    return 0 ;
+}
